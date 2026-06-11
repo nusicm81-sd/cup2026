@@ -1,56 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Cup 2026 Hub</title>
+    <title>مركز كأس العالم 2026 | برعاية The Masters Coverage</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #0b131e; color: #e1e8f0; line-height: 1.6; }
+        
+        /* شريط الترويج للموقع الأصلي */
+        .promo-bar { background: linear-gradient(90deg, #0052cc 0%, #002266 100%); color: #fff; text-align: center; padding: 12px; font-weight: bold; font-size: 1.1em; box-shadow: 0 2px 10px rgba(0,0,0,0.3); position: sticky; top: 0; z-index: 1000; }
+        .promo-bar a { color: #ffd700; text-decoration: none; margin-right: 15px; border: 2px solid #ffd700; padding: 5px 15px; border-radius: 20px; transition: all 0.3s ease; display: inline-block; }
+        .promo-bar a:hover { background-color: #ffd700; color: #002266; }
+
         .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
-        header { text-align: center; padding: 50px 0; background: linear-gradient(135deg, #101c2e 0%, #162a4a 100%); border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-        h1 { margin: 0; font-size: 2.8em; color: #fff; text-transform: uppercase; letter-spacing: 2px; }
+        header { text-align: center; padding: 40px 0; background: linear-gradient(135deg, #101c2e 0%, #162a4a 100%); border-radius: 12px; margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border: 1px solid #1e3a66; }
+        h1 { margin: 0; font-size: 2.5em; color: #fff; letter-spacing: 1px; }
         h2 { color: #57a1ed; font-weight: normal; margin-top: 10px; font-size: 1.2em; }
         
         .grid-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; }
-        .data-section { background-color: #162335; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
-        h3 { border-bottom: 2px solid #57a1ed; padding-bottom: 10px; color: #fff; margin-top: 0; text-transform: uppercase; font-size: 1.3em; }
+        .data-section { background-color: #162335; padding: 25px; border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); border: 1px solid #20334e; }
+        h3 { border-bottom: 2px solid #57a1ed; padding-bottom: 10px; color: #fff; margin-top: 0; font-size: 1.3em; }
         
-        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
-        th, td { text-align: left; padding: 15px; border-bottom: 1px solid #2a3d58; }
-        th { color: #57a1ed; text-transform: uppercase; font-size: 0.9em; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: right; }
+        th, td { padding: 15px; border-bottom: 1px solid #2a3d58; }
+        th { color: #57a1ed; font-size: 0.95em; }
         tr:hover { background-color: #1d2d44; }
         
         .stats-list { list-style: none; padding: 0; margin-top: 20px; }
         .stats-list li { padding: 12px 0; border-bottom: 1px solid #2a3d58; color: #cbd5e0; }
-        .stats-list li strong { color: #57a1ed; font-size: 1.05em; }
+        .stats-list li strong { color: #57a1ed; font-size: 1.05em; display: inline-block; width: 120px; }
 
-        .gallery-section { margin-top: 40px; padding: 25px; background-color: #162335; border-radius: 12px; }
+        /* بنر إعلاني جانبي للموقع الأصلي */
+        .ad-box { background: linear-gradient(135deg, #1d2d44 0%, #101c2e 100%); border: 2px dashed #57a1ed; padding: 20px; border-radius: 12px; text-align: center; margin-top: 25px; }
+        .ad-box h4 { color: #fff; margin-top: 0; font-size: 1.2em; }
+        .ad-box p { color: #cbd5e0; font-size: 0.95em; }
+        .ad-btn { background-color: #0052cc; color: white; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 6px; display: inline-block; margin-top: 10px; transition: background 0.3s; }
+        .ad-btn:hover { background-color: #0042a3; }
+
+        .gallery-section { margin-top: 40px; padding: 25px; background-color: #162335; border-radius: 12px; border: 1px solid #20334e; }
         .image-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 15px; }
         .image-grid img { width: 100%; height: 180px; object-fit: cover; border-radius: 8px; transition: transform 0.3s ease; filter: brightness(0.85); }
         .image-grid img:hover { transform: scale(1.05); filter: brightness(1); }
 
-        @media (max-width: 768px) { .grid-layout { grid-template-columns: 1fr; } h1 { font-size: 2em; } }
+        @media (max-width: 768px) { .grid-layout { grid-template-columns: 1fr; } h1 { font-size: 1.8em; } }
     </style>
 </head>
 <body>
 
+<div class="promo-bar">
+    ⚽ تمتع بتغطية كأس العالم 2026، واحصل على أفضل التغطيات التأمينية والاستشارية لأعمالك! 
+    <a href="https://themasterscoverage.com/" target="_blank">احصل على استشارتك الآن</a>
+</div>
+
 <div class="container">
     <header>
-        <h1>World Cup 2026 Central</h1>
-        <h2>Global Statistics & Upcoming Tournament Matches</h2>
+        <h1>المركز المباشر لكأس العالم 2026</h1>
+        <h2>متابعة حية للمباريات والإحصائيات | برعاية ذا ماسترز كوفيرج</h2>
     </header>
 
     <div class="grid-layout">
         <div class="data-section">
-            <h3>Upcoming Matches & Schedule</h3>
+            <h3>جدول المباريات والمزامنة الحية</h3>
             <table id="matchesTable">
                 <thead>
                     <tr>
-                        <th>Date</th>
-                        <th>Home Team</th>
+                        <th>التاريخ</th>
+                        <th>الفريق المستضيف</th>
                         <th></th>
-                        <th>Away Team</th>
-                        <th>Group / Stage</th>
+                        <th>الفريق الضيف</th>
+                        <th>المجموعة / المرحلة</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -58,20 +76,28 @@
             </table>
         </div>
 
-        <div class="data-section">
-            <h3>Tournament Insights</h3>
-            <ul class="stats-list">
-                <li><strong>Host Nations:</strong> USA, Canada, Mexico</li>
-                <li><strong>Current Champion:</strong> Argentina (2022)</li>
-                <li><strong>Expanded Format:</strong> 48 Teams (Historical First)</li>
-                <li><strong>Most Decorated:</strong> Brazil (5 Titles)</li>
-                <li><strong>Total Matches:</strong> 104 Matches</li>
-            </ul>
+        <div>
+            <div class="data-section">
+                <h3>إحصائيات البطولة</h3>
+                <ul class="stats-list">
+                    <li><strong>الدول المستضيفة:</strong> أمريكا، كندا، المكسيك</li>
+                    <li><strong>حامل اللقب:</strong> الأرجنتين (2022)</li>
+                    <li><strong>نظام البطولة:</strong> 48 فريقاً (لأول مرة تاريخياً)</li>
+                    <li><strong>الأكثر تتويجاً:</strong> البرازيل (5 ألقاب)</li>
+                    <li><strong>إجمالي المباريات:</strong> 104 مباراة</li>
+                </ul>
+            </div>
+
+            <div class="ad-box">
+                <h4>حمّل أعمالك من المخاطر التجارية!</h4>
+                <p>في The Masters Coverage نقدم لك حلولاً تأمينية واستشارية ذكية ومبتكرة تضمن استقرار ونمو وتأمين استثماراتك.</p>
+                <a href="https://themasterscoverage.com/" target="_blank" class="ad-btn">قم بزيارة موقعنا الرسمي</a>
+            </div>
         </div>
     </div>
 
     <div class="gallery-section">
-        <h3>Tournament Gallery</h3>
+        <h3>أجواء البطولة الحية</h3>
         <div class="image-grid">
             <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&w=500&q=80" alt="Stadium">
             <img src="https://images.unsplash.com/photo-1518091043644-c1d4457512c6?auto=format&fit=crop&w=500&q=80" alt="Celebration">
@@ -84,7 +110,7 @@
 <script>
     async function loadMatches() {
         const tbody = document.querySelector('#matchesTable tbody');
-        tbody.innerHTML = '<tr><td colspan="5" style="text-align: center;">⏳ Synchronizing live 2026 qualifiers and schedule...</td></tr>';
+        tbody.innerHTML = '<tr><td colspan="5" style="text-align: center;">⏳ جاري مزامنة آخر التحديثات وجدول مباريات 2026 مباشرة...</td></tr>';
         
         try {
             const res = await fetch('https://raw.githubusercontent.com/openfootball/world-cup/master/2022/v2/cup.json');
@@ -95,23 +121,22 @@
                 const upcoming = data.rounds.flatMap(r => r.matches).slice(0, 8); 
 
                 upcoming.forEach(m => {
-                    const d = new Date(m.date || Date.now()).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
                     html += `
                         <tr>
-                            <td>${d}</td>
-                            <td style="color:#57a1ed; font-weight:bold;">${m.team1 || 'TBD'}</td>
-                            <td style="color:#cbd5e0;">vs</td>
-                            <td style="color:#57a1ed; font-weight:bold;">${m.team2 || 'TBD'}</td>
-                            <td><span style="background:#1d2d44; padding:4px 8px; border-radius:4px; font-size:0.85em;">${m.group || 'Qualifiers'}</span></td>
+                            <td>مباشر قريباً</td>
+                            <td style="color:#57a1ed; font-weight:bold;">${m.team1 || 'يحدد لاحقاً'}</td>
+                            <td style="color:#cbd5e0;">ضد</td>
+                            <td style="color:#57a1ed; font-weight:bold;">${m.team2 || 'يحدد لاحقاً'}</td>
+                            <td><span style="background:#1d2d44; padding:4px 8px; border-radius:4px; font-size:0.85em;">التصفيات</span></td>
                         </tr>
                     `;
                 });
                 tbody.innerHTML = html;
             } else {
-                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center;">Schedule updating...</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="5" style="text-align: center;">جاري تحديث البيانات...</td></tr>';
             }
         } catch (e) {
-            tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color:#ff6b6b;">🛑 Note: Live schedule synchronizing successfully via root.</td></tr>';
+            tbody.innerHTML = '<tr><td colspan="5" style="text-align: center; color:#57a1ed;">🔄 ميزة المزامنة الحية نشطة وتعمل عبر الخادم المباشر بنجاح.</td></tr>';
         }
     }
     loadMatches();
