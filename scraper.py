@@ -1,0 +1,26 @@
+name: Update News
+on:
+  schedule:
+    - cron: '0 * * * *' # يعمل كل ساعة
+  workflow_dispatch: # للسماح لك بتشغيله يدوياً للتجربة
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.9'
+      - name: Install dependencies
+        run: pip install feedparser
+      - name: Run Scraper
+        run: python scraper.py
+      - name: Commit and Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add news.json
+          git commit -m "Update news automatically"
+          git push
