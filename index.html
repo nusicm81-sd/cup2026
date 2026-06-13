@@ -1,23 +1,24 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>تغطية كأس العالم 2026</title>
-</head>
-<body class="bg-gray-100">
-    <nav class="bg-red-700 p-4 text-white text-center font-bold text-xl">تغطية كأس العالم 2026</nav>
-    
-    <div class="container mx-auto p-4 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-2xl font-bold mb-4 border-b pb-2">جدول المجموعات</h2>
-            <div id="groups-container">جاري تحديث الترتيب...</div>
-        </div>
-
-        <div class="bg-white p-6 rounded-lg shadow-lg">
-            <h2 class="text-xl font-bold mb-4 border-b pb-2 text-red-600">أخبار حية</h2>
-            <div id="news-container">جاري تحميل الأخبار...</div>
-        </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="groups-container">
     </div>
-</body>
-</html>
+
+<script>
+    function updateData() {
+        // تحديث الأخبار
+        fetch('news.json').then(r => r.json()).then(data => {
+            document.getElementById('news-container').innerHTML = data.map(n => 
+                `<div class="p-3 border-b">${n.title}</div>`).join('');
+        });
+
+        // تحديث المجموعات
+        fetch('groups.json').then(r => r.json()).then(data => {
+            document.getElementById('groups-container').innerHTML = data.map(g => `
+                <div class="bg-white p-4 rounded shadow">
+                    <h3 class="font-bold text-red-700">${g.group}</h3>
+                    ${g.teams.map(t => `<div class="flex justify-between"><span>${t.name}</span><span>${t.pts} نقطة</span></div>`).join('')}
+                </div>
+            `).join('');
+        });
+    }
+    updateData();
+    setInterval(updateData, 180000); // تحديث كل 3 دقائق
+</script>
