@@ -173,7 +173,7 @@
                 "won": 1,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 2
+                "goalDifference": 6
             },
             {
                 "name": "Ecuador",
@@ -200,7 +200,7 @@
                 "won": 0,
                 "drawn": 0,
                 "lost": 1,
-                "goalDifference": -2
+                "goalDifference": -6
             }
         ]
     },
@@ -209,19 +209,19 @@
         "teams": [
             {
                 "name": "Japan",
-                "pts": 0,
-                "played": 0,
+                "pts": 1,
+                "played": 1,
                 "won": 0,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 0,
                 "goalDifference": 0
             },
             {
                 "name": "Netherlands",
-                "pts": 0,
-                "played": 0,
+                "pts": 1,
+                "played": 1,
                 "won": 0,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 0,
                 "goalDifference": 0
             },
