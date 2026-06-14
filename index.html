@@ -1,30 +1,26 @@
+<script>
 fetch('groups.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('groups-container');
-    container.innerHTML = data.map(group => `
-      <div class="bg-[#1e293b] rounded-2xl p-5 shadow-xl border border-slate-700">
-        <h2 class="text-xl font-black text-red-500 mb-4 border-b border-slate-700 pb-3">${group.group}</h2>
-        <table class="w-full text-sm text-gray-300">
-          <thead>
-            <tr class="text-gray-500 text-xs">
-              <th>الفريق</th><th>ل</th><th>ف</th><th>ت</th><th>خ</th><th>+/-</th><th>ن</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${group.teams.map(t => `
-              <tr class="border-t border-slate-700/50">
-                <td class="py-2 font-semibold">${t.name}</td>
-                <td>${t.played || 0}</td>
-                <td>${t.won || 0}</td>
-                <td>${t.drawn || 0}</td>
-                <td>${t.lost || 0}</td>
-                <td>${t.goalDifference || 0}</td>
-                <td class="font-black text-red-500">${t.pts || 0}</td>
-              </tr>
-            `).join('')}
-          </tbody>
+    container.innerHTML = data.map(g => `
+      <div class="bg-[#1e293b] p-4 rounded-xl border border-slate-700">
+        <h2 class="text-red-500 font-bold mb-3">${g.group}</h2>
+        <table class="w-full text-xs text-white">
+          <tr class="text-gray-400 border-b border-slate-600">
+            <th class="text-right">الفريق</th><th>ل</th><th>ف</th><th>ت</th><th>خ</th><th>+/-</th><th>ن</th>
+          </tr>
+          ${g.teams.map(t => `
+            <tr class="border-b border-slate-700/50">
+              <td class="py-2">${t.name}</td>
+              <td class="text-center">${t.played}</td>
+              <td class="text-center">${t.won}</td>
+              <td class="text-center">${t.drawn}</td>
+              <td class="text-center">${t.lost}</td>
+              <td class="text-center">${t.goalDifference}</td>
+              <td class="text-center text-red-500 font-bold">${t.pts}</td>
+            </tr>`).join('')}
         </table>
-      </div>
-    `).join('');
+      </div>`).join('');
   });
+</script>
