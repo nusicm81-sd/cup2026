@@ -1,8 +1,13 @@
+<div id="groups-container" class="grid md:grid-cols-3 gap-6"></div>
+
 <script>
 fetch('groups.json')
   .then(response => response.json())
   .then(data => {
     const container = document.getElementById('groups-container');
+    // إذا لم تظهر الجداول، أضف هذا السطر للتأكد من وصول البيانات
+    console.log(data); 
+    
     container.innerHTML = data.map(g => `
       <div class="bg-[#1e293b] p-4 rounded-xl border border-slate-700">
         <h2 class="text-red-500 font-bold mb-3">${g.group}</h2>
@@ -22,5 +27,6 @@ fetch('groups.json')
             </tr>`).join('')}
         </table>
       </div>`).join('');
-  });
+  })
+  .catch(error => console.error('Error loading JSON:', error));
 </script>
