@@ -1,10 +1,10 @@
+import os
 import requests
 import json
-import os
 
 def update_standings():
-    # مفتاح الـ API الخاص بك
-  api_key = os.getenv('API_KEY')
+    api_key = os.getenv('API_KEY')
+    # السطر التالي يجب أن يكون داخل الدالة ومزاحاً بـ 4 مسافات فقط
     url = "https://api.football-data.org/v4/competitions/WC/standings"
     headers = {'X-Auth-Token': api_key}
     
@@ -15,17 +15,20 @@ def update_standings():
             formatted_data = []
             
             for table in data['standings']:
-                # استخراج اسم المجموعة
                 group_name = table['group'].replace('_', ' ')
                 teams = []
                 for t in table['table']:
                     teams.append({
                         "name": t['team']['name'],
-                        "pts": t['points']
+                        "pts": t['points'],
+                        "played": t['playedGames'],
+                        "won": t['won'],
+                        "drawn": t['draw'],
+                        "lost": t['lost'],
+                        "goalDifference": t['goalDifference']
                     })
                 formatted_data.append({"group": group_name, "teams": teams})
             
-            # حفظ النتائج
             with open('groups.json', 'w', encoding='utf-8') as f:
                 json.dump(formatted_data, f, ensure_ascii=False, indent=4)
     except Exception as e:
