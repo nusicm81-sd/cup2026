@@ -2,13 +2,22 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ترتيب المجموعات</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #0f172a; color: white; font-family: sans-serif; }
+    </style>
 </head>
-<body class="bg-slate-900 text-white p-6">
+<body class="p-4 md:p-8">
 
-    <h1 class="text-3xl font-black text-center text-red-500 mb-8">ترتيب المجموعات</h1>
+    <header class="text-center mb-10">
+        <h1 class="text-4xl font-black text-white mb-2">ترتيب <span class="text-red-500">المجموعات</span></h1>
+        <p class="text-gray-400">تحديثات فورية ومباشرة</p>
+    </header>
 
-    <div id="groups-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+    <div id="groups-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
 
     <script>
         fetch('groups.json')
@@ -16,19 +25,34 @@
             .then(data => {
                 const container = document.getElementById('groups-container');
                 container.innerHTML = data.map(g => `
-                    <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 shadow-lg">
-                        <h2 class="font-bold text-red-400 border-b border-slate-700 pb-2 mb-3">${g.group}</h2>
-                        <table class="w-full text-xs">
-                            <tr class="text-gray-400"><th>الفريق</th><th>ل</th><th>ف</th><th>ت</th><th>خ</th><th>ن</th></tr>
-                            ${g.teams.map(t => `
-                                <tr class="border-t border-slate-700">
-                                    <td class="py-2">${t.name}</td>
-                                    <td>${t.played}</td><td>${t.won}</td>
-                                    <td>${t.drawn}</td><td>${t.lost}</td>
-                                    <td class="font-bold text-red-500">${t.pts}</td>
-                                </tr>
-                            `).join('')}
-                        </table>
+                    <div class="bg-[#1e293b] rounded-2xl p-5 shadow-xl border border-slate-700">
+                        <h2 class="text-xl font-black text-red-500 mb-4 border-b border-slate-700 pb-3">${g.group}</h2>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-gray-300">
+                                <thead class="text-gray-500 text-xs uppercase">
+                                    <tr>
+                                        <th class="text-right py-2">الفريق</th>
+                                        <th class="px-2 text-center">ل</th>
+                                        <th class="px-2 text-center">ف</th>
+                                        <th class="px-2 text-center">ت</th>
+                                        <th class="px-2 text-center">خ</th>
+                                        <th class="px-2 text-center text-red-400">ن</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${g.teams.map(t => `
+                                        <tr class="border-t border-slate-700/50">
+                                            <td class="py-3 font-semibold">${t.name}</td>
+                                            <td class="text-center">${t.played}</td>
+                                            <td class="text-center">${t.won}</td>
+                                            <td class="text-center">${t.drawn}</td>
+                                            <td class="text-center">${t.lost}</td>
+                                            <td class="text-center font-black text-red-500">${t.pts}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 `).join('');
             });
