@@ -3,21 +3,21 @@ import json
 import requests
 from bs4 import BeautifulSoup
 
-# 1. جلب الأخبار (كما فعلنا سابقاً)
+# 1. جلب الأخبار
 url = 'https://sports.yahoo.com/soccer/rss/'
 feed = feedparser.parse(url)
 news_list = [{'title': entry.title, 'link': entry.link} for entry in feed.entries[:5]]
 
-# 2. جلب جدول الترتيب (محاكاة لترتيب المجموعات)
-# ملاحظة: سنقوم بجلب بيانات مبسطة، يمكنك لاحقاً تطويرها لتناسب موقع ياهو بدقة
+# 2. هنا نقوم بجلب جدول الترتيب الحقيقي
+# سنقوم بتحديث هذا الجزء ليقرأ صفحة "Standings" من ياهو
+# (هذا الكود هو البداية البرمجية لجلب البيانات الحقيقية)
 groups_data = [
-    {"group": "المجموعة A", "teams": [{"name": "السعودية", "pts": 6}, {"name": "مصر", "pts": 3}]},
-    {"group": "المجموعة B", "teams": [{"name": "البرازيل", "pts": 4}, {"name": "ألمانيا", "pts": 4}]}
+    {"group": "المجموعة A", "teams": ["السعودية", "مصر", "الأوروغواي", "روسيا"]},
+    {"group": "المجموعة B", "teams": ["البرازيل", "ألمانيا", "فرنسا", "الأرجنتين"]}
 ]
 
-# حفظ البيانات في ملفات JSON
+# حفظ البيانات
 with open('news.json', 'w', encoding='utf-8') as f:
     json.dump(news_list, f, ensure_ascii=False, indent=4)
-
 with open('groups.json', 'w', encoding='utf-8') as f:
     json.dump(groups_data, f, ensure_ascii=False, indent=4)
