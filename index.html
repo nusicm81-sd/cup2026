@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 text-white p-4">
-    <h1 class="text-3xl font-bold text-center mb-8 text-red-500">ترتيب المجموعات</h1>
-    <div id="app" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4"></div>
+<body class="bg-slate-900 text-white p-6">
+
+    <h1 class="text-3xl font-black text-center text-red-500 mb-8">ترتيب المجموعات</h1>
+
+    <div id="groups-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
     <script>
         fetch('groups.json')
             .then(res => res.json())
             .then(data => {
-                document.getElementById('app').innerHTML = data.map(g => `
-                    <div class="bg-slate-800 p-4 rounded-lg shadow-lg">
-                        <h2 class="font-bold border-b border-slate-700 pb-2 mb-2">${g.group}</h2>
-                        ${g.teams.map(t => `
-                            <div class="flex justify-between py-1 border-b border-slate-700 last:border-0 text-sm">
-                                <span>${t.name}</span>
-                                <span class="font-bold text-red-400">${t.pts} نقطة</span>
-                            </div>
-                        `).join('')}
+                const container = document.getElementById('groups-container');
+                container.innerHTML = data.map(g => `
+                    <div class="bg-slate-800 p-4 rounded-xl border border-slate-700 shadow-lg">
+                        <h2 class="font-bold text-red-400 border-b border-slate-700 pb-2 mb-3">${g.group}</h2>
+                        <table class="w-full text-xs">
+                            <tr class="text-gray-400"><th>الفريق</th><th>ل</th><th>ف</th><th>ت</th><th>خ</th><th>ن</th></tr>
+                            ${g.teams.map(t => `
+                                <tr class="border-t border-slate-700">
+                                    <td class="py-2">${t.name}</td>
+                                    <td>${t.played}</td><td>${t.won}</td>
+                                    <td>${t.drawn}</td><td>${t.lost}</td>
+                                    <td class="font-bold text-red-500">${t.pts}</td>
+                                </tr>
+                            `).join('')}
+                        </table>
                     </div>
                 `).join('');
             });
