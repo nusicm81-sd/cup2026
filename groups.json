@@ -1,27 +1,253 @@
 [
     {
-        "group": "المجموعة A",
+        "group": "Group A",
         "teams": [
             {
-                "name": "السعودية",
-                "pts": 5
+                "name": "Mexico",
+                "pts": 3
             },
             {
-                "name": "مصر",
-                "pts": 8
+                "name": "South Korea",
+                "pts": 3
+            },
+            {
+                "name": "Czechia",
+                "pts": 0
+            },
+            {
+                "name": "South Africa",
+                "pts": 0
             }
         ]
     },
     {
-        "group": "المجموعة B",
+        "group": "Group B",
         "teams": [
             {
-                "name": "البرازيل",
-                "pts": 7
+                "name": "Switzerland",
+                "pts": 1
             },
             {
-                "name": "ألمانيا",
+                "name": "Canada",
+                "pts": 1
+            },
+            {
+                "name": "Qatar",
+                "pts": 1
+            },
+            {
+                "name": "Bosnia-Herzegovina",
+                "pts": 1
+            }
+        ]
+    },
+    {
+        "group": "Group C",
+        "teams": [
+            {
+                "name": "Scotland",
                 "pts": 3
+            },
+            {
+                "name": "Morocco",
+                "pts": 1
+            },
+            {
+                "name": "Brazil",
+                "pts": 1
+            },
+            {
+                "name": "Haiti",
+                "pts": 0
+            }
+        ]
+    },
+    {
+        "group": "Group D",
+        "teams": [
+            {
+                "name": "United States",
+                "pts": 3
+            },
+            {
+                "name": "Australia",
+                "pts": 3
+            },
+            {
+                "name": "Turkey",
+                "pts": 0
+            },
+            {
+                "name": "Paraguay",
+                "pts": 0
+            }
+        ]
+    },
+    {
+        "group": "Group E",
+        "teams": [
+            {
+                "name": "Curaçao",
+                "pts": 0
+            },
+            {
+                "name": "Germany",
+                "pts": 0
+            },
+            {
+                "name": "Ecuador",
+                "pts": 0
+            },
+            {
+                "name": "Ivory Coast",
+                "pts": 0
+            }
+        ]
+    },
+    {
+        "group": "Group F",
+        "teams": [
+            {
+                "name": "Japan",
+                "pts": 0
+            },
+            {
+                "name": "Netherlands",
+                "pts": 0
+            },
+            {
+                "name": "Sweden",
+                "pts": 0
+            },
+            {
+                "name": "Tunisia",
+                "pts": 0
+            }
+        ]
+    },
+    {
+        "group": "Group G",
+        "teams": [
+            {
+                "name": "Egypt",
+                "pts": 0
+            },
+            {
+                "name": "Belgium",
+                "pts": 0
+            },
+            {
+                "name": "Iran",
+                "pts": 0
+            },
+            {
+                "name": "New Zealand",
+                "pts": 0
+            }
+        ]
+    },
+    {
+        "group": "Group H",
+        "teams": [
+            {
+                "name": "Cape Verde Islands",
+                "pts": 0
+            },
+            {
+                "name": "Saudi Arabia",
+                "pts": 0
+            },
+            {
+                "name": "Spain",
+                "pts": 0
+            },
+            {
+                "name": "Uruguay",
+                "pts": 0
+            }
+        ]
+    },
+    {
+        "group": "Group I",
+        "teams": [
+            {
+                "name": "France",
+                "pts": 0
+            },
+            {
+                "name": "Iraq",
+                "pts": 0
+            },
+            {
+                "name": "Norway",
+                "pts": 0
+            },
+            {
+                "name": "Senegal",
+                "pts": 0
+            }
+        ]
+    },
+    {
+        "group": "Group J",
+        "teams": [
+            {
+                "name": "Algeria",
+                "pts": 0
+            },
+            {
+                "name": "Argentina",
+                "pts": 0
+            },
+            {
+                "name": "Jordan",
+                "pts": 0
+            },
+            {
+                "name": "Austria",
+                "pts": 0
+            }
+        ]
+    },
+    {
+        "group": "Group K",
+        "teams": [
+            {
+                "name": "Congo DR",
+                "pts": 0
+            },
+            {
+                "name": "Colombia",
+                "pts": 0
+            },
+            {
+                "name": "Portugal",
+                "pts": 0
+            },
+            {
+                "name": "Uzbekistan",
+                "pts": 0
+            }
+        ]
+    },
+    {
+        "group": "Group L",
+        "teams": [
+            {
+                "name": "England",
+                "pts": 0
+            },
+            {
+                "name": "Ghana",
+                "pts": 0
+            },
+            {
+                "name": "Croatia",
+                "pts": 0
+            },
+            {
+                "name": "Panama",
+                "pts": 0
             }
         ]
     }
