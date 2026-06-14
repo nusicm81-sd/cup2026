@@ -4,7 +4,7 @@ import os
 
 def update_standings():
     # مفتاح الـ API الخاص بك
-    api_key = "860b308d5df647b58d486cf2b0ea1638"
+  api_key = os.getenv('API_KEY')
     url = "https://api.football-data.org/v4/competitions/WC/standings"
     headers = {'X-Auth-Token': api_key}
     
