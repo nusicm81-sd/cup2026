@@ -1,43 +1,64 @@
-<script>
-fetch('groups.json')
-  .then(response => response.json())
-  .then(data => {
-    const container = document.getElementById('groups-container');
-    container.innerHTML = ''; // تفريغ الحاويات القديمة
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ترتيب مجموعات البطولة</title>
+    <!-- استدعاء Tailwind CSS للتصميم -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0f172a] text-white font-sans p-4 md:p-8">
 
-    data.forEach(group => {
-      const groupDiv = document.createElement('div');
-      groupDiv.className = "bg-slate-900 rounded-xl p-4 shadow-lg border border-slate-700";
-      groupDiv.innerHTML = `
-        <h2 class="text-xl font-bold text-red-500 mb-4 border-b border-slate-700 pb-2">${group.group}</h2>
-        <table class="w-full text-sm text-gray-300">
-          <thead>
-            <tr class="text-gray-500">
-              <th class="text-left">الفريق</th>
-              <th class="px-1">لعب</th>
-              <th class="px-1">فوز</th>
-              <th class="px-1">تعادل</th>
-              <th class="px-1">خسارة</th>
-              <th class="px-1">أهداف</th>
-              <th class="px-1 font-bold text-white">نقطة</th>
-            </tr>
-          </thead>
-          <tbody>
-            ${group.teams.map(t => `
-              <tr class="border-t border-slate-800">
-                <td class="py-2">${t.name}</td>
-                <td class="text-center">${t.played}</td>
-                <td class="text-center">${t.won}</td>
-                <td class="text-center">${t.drawn}</td>
-                <td class="text-center">${t.lost}</td>
-                <td class="text-center">${t.goalDifference}</td>
-                <td class="text-center font-bold text-red-400">${t.pts}</td>
-              </tr>
-            `).join('')}
-          </tbody>
-        </table>
-      `;
-      container.appendChild(groupDiv);
-    });
-  });
-</script>
+    <header class="text-center mb-10">
+        <h1 class="text-4xl font-black text-white mb-2">ترتيب <span class="text-red-500">المجموعات</span></h1>
+        <p class="text-gray-400">تحديثات فورية ومباشرة</p>
+    </header>
+
+    <!-- الحاوية التي سيتم عرض المجموعات فيها -->
+    <div id="groups-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- يتم تحميل البيانات هنا -->
+    </div>
+
+    <script>
+        fetch('groups.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('groups-container');
+                container.innerHTML = data.map(group => `
+                    <div class="bg-[#1e293b] rounded-2xl p-5 shadow-xl border border-slate-700">
+                        <h2 class="text-xl font-black text-red-500 mb-4 border-b border-slate-700 pb-3">${group.group}</h2>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-sm text-gray-300">
+                                <thead class="text-gray-500 text-xs uppercase">
+                                    <tr>
+                                        <th class="text-right py-2">الفريق</th>
+                                        <th class="px-1 text-center">ل</th>
+                                        <th class="px-1 text-center">ف</th>
+                                        <th class="px-1 text-center">ت</th>
+                                        <th class="px-1 text-center">خ</th>
+                                        <th class="px-1 text-center">+/-</th>
+                                        <th class="px-1 text-center text-red-400">ن</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${group.teams.map(t => `
+                                        <tr class="border-t border-slate-700/50">
+                                            <td class="py-3 font-semibold">${t.name}</td>
+                                            <td class="text-center">${t.played}</td>
+                                            <td class="text-center">${t.won}</td>
+                                            <td class="text-center">${t.drawn}</td>
+                                            <td class="text-center">${t.lost}</td>
+                                            <td class="text-center">${t.goalDifference}</td>
+                                            <td class="text-center font-black text-red-500">${t.pts}</td>
+                                        </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                `).join('');
+            })
+            .catch(err => console.error("Error loading groups:", err));
+    </script>
+</body>
+</html>
