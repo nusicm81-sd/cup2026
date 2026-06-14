@@ -167,22 +167,13 @@
         "group": "Group E",
         "teams": [
             {
-                "name": "Curaçao",
-                "pts": 1,
-                "played": 1,
-                "won": 0,
-                "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
                 "name": "Germany",
-                "pts": 1,
+                "pts": 3,
                 "played": 1,
-                "won": 0,
-                "drawn": 1,
+                "won": 1,
+                "drawn": 0,
                 "lost": 0,
-                "goalDifference": 0
+                "goalDifference": 2
             },
             {
                 "name": "Ecuador",
@@ -201,6 +192,15 @@
                 "drawn": 0,
                 "lost": 0,
                 "goalDifference": 0
+            },
+            {
+                "name": "Curaçao",
+                "pts": 0,
+                "played": 1,
+                "won": 0,
+                "drawn": 0,
+                "lost": 1,
+                "goalDifference": -2
             }
         ]
     },
