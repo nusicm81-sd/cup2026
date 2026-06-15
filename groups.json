@@ -176,22 +176,22 @@
                 "goalDifference": 6
             },
             {
-                "name": "Ecuador",
-                "pts": 0,
-                "played": 0,
-                "won": 0,
+                "name": "Ivory Coast",
+                "pts": 3,
+                "played": 1,
+                "won": 1,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 0
+                "goalDifference": 1
             },
             {
-                "name": "Ivory Coast",
+                "name": "Ecuador",
                 "pts": 0,
-                "played": 0,
+                "played": 1,
                 "won": 0,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 0
+                "lost": 1,
+                "goalDifference": -1
             },
             {
                 "name": "Curaçao",
@@ -207,6 +207,15 @@
     {
         "group": "Group F",
         "teams": [
+            {
+                "name": "Sweden",
+                "pts": 3,
+                "played": 1,
+                "won": 1,
+                "drawn": 0,
+                "lost": 0,
+                "goalDifference": 4
+            },
             {
                 "name": "Japan",
                 "pts": 1,
@@ -226,22 +235,13 @@
                 "goalDifference": 0
             },
             {
-                "name": "Sweden",
-                "pts": 0,
-                "played": 0,
-                "won": 0,
-                "drawn": 0,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
                 "name": "Tunisia",
                 "pts": 0,
-                "played": 0,
+                "played": 1,
                 "won": 0,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 0
+                "lost": 1,
+                "goalDifference": -4
             }
         ]
     },
@@ -291,24 +291,24 @@
         "teams": [
             {
                 "name": "Cape Verde Islands",
-                "pts": 0,
-                "played": 0,
+                "pts": 1,
+                "played": 1,
                 "won": 0,
-                "drawn": 0,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
-                "name": "Saudi Arabia",
-                "pts": 0,
-                "played": 0,
-                "won": 0,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 0,
                 "goalDifference": 0
             },
             {
                 "name": "Spain",
+                "pts": 1,
+                "played": 1,
+                "won": 0,
+                "drawn": 1,
+                "lost": 0,
+                "goalDifference": 0
+            },
+            {
+                "name": "Saudi Arabia",
                 "pts": 0,
                 "played": 0,
                 "won": 0,
