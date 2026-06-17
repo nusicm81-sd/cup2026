@@ -414,24 +414,24 @@
         "teams": [
             {
                 "name": "Congo DR",
-                "pts": 0,
-                "played": 0,
+                "pts": 1,
+                "played": 1,
                 "won": 0,
-                "drawn": 0,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
-                "name": "Colombia",
-                "pts": 0,
-                "played": 0,
-                "won": 0,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 0,
                 "goalDifference": 0
             },
             {
                 "name": "Portugal",
+                "pts": 1,
+                "played": 1,
+                "won": 0,
+                "drawn": 1,
+                "lost": 0,
+                "goalDifference": 0
+            },
+            {
+                "name": "Colombia",
                 "pts": 0,
                 "played": 0,
                 "won": 0,
@@ -455,24 +455,15 @@
         "teams": [
             {
                 "name": "England",
-                "pts": 0,
-                "played": 0,
-                "won": 0,
+                "pts": 3,
+                "played": 1,
+                "won": 1,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 0
+                "goalDifference": 1
             },
             {
                 "name": "Ghana",
-                "pts": 0,
-                "played": 0,
-                "won": 0,
-                "drawn": 0,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
-                "name": "Croatia",
                 "pts": 0,
                 "played": 0,
                 "won": 0,
@@ -488,6 +479,15 @@
                 "drawn": 0,
                 "lost": 0,
                 "goalDifference": 0
+            },
+            {
+                "name": "Croatia",
+                "pts": 0,
+                "played": 1,
+                "won": 0,
+                "drawn": 0,
+                "lost": 1,
+                "goalDifference": -1
             }
         ]
     }
