@@ -331,6 +331,15 @@
         "group": "Group I",
         "teams": [
             {
+                "name": "Norway",
+                "pts": 3,
+                "played": 1,
+                "won": 1,
+                "drawn": 0,
+                "lost": 0,
+                "goalDifference": 3
+            },
+            {
                 "name": "France",
                 "pts": 3,
                 "played": 1,
@@ -340,13 +349,13 @@
                 "goalDifference": 2
             },
             {
-                "name": "Norway",
-                "pts": 3,
+                "name": "Senegal",
+                "pts": 0,
                 "played": 1,
-                "won": 1,
+                "won": 0,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 1
+                "lost": 1,
+                "goalDifference": -2
             },
             {
                 "name": "Iraq",
@@ -355,16 +364,7 @@
                 "won": 0,
                 "drawn": 0,
                 "lost": 1,
-                "goalDifference": -1
-            },
-            {
-                "name": "Senegal",
-                "pts": 0,
-                "played": 1,
-                "won": 0,
-                "drawn": 0,
-                "lost": 1,
-                "goalDifference": -2
+                "goalDifference": -3
             }
         ]
     },
@@ -372,40 +372,40 @@
         "group": "Group J",
         "teams": [
             {
-                "name": "Algeria",
-                "pts": 0,
-                "played": 0,
-                "won": 0,
+                "name": "Argentina",
+                "pts": 3,
+                "played": 1,
+                "won": 1,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 0
+                "goalDifference": 3
             },
             {
-                "name": "Argentina",
-                "pts": 0,
-                "played": 0,
-                "won": 0,
+                "name": "Austria",
+                "pts": 3,
+                "played": 1,
+                "won": 1,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 0
+                "goalDifference": 2
             },
             {
                 "name": "Jordan",
                 "pts": 0,
-                "played": 0,
+                "played": 1,
                 "won": 0,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 0
+                "lost": 1,
+                "goalDifference": -2
             },
             {
-                "name": "Austria",
+                "name": "Algeria",
                 "pts": 0,
-                "played": 0,
+                "played": 1,
                 "won": 0,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 0
+                "lost": 1,
+                "goalDifference": -3
             }
         ]
     },
