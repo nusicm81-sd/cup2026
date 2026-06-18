@@ -22,19 +22,19 @@
             },
             {
                 "name": "Czechia",
-                "pts": 0,
-                "played": 1,
+                "pts": 1,
+                "played": 2,
                 "won": 0,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 1,
                 "goalDifference": -1
             },
             {
                 "name": "South Africa",
-                "pts": 0,
-                "played": 1,
+                "pts": 1,
+                "played": 2,
                 "won": 0,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 1,
                 "goalDifference": -2
             }
@@ -45,10 +45,19 @@
         "teams": [
             {
                 "name": "Switzerland",
-                "pts": 1,
-                "played": 1,
+                "pts": 2,
+                "played": 2,
                 "won": 0,
-                "drawn": 1,
+                "drawn": 2,
+                "lost": 0,
+                "goalDifference": 0
+            },
+            {
+                "name": "Bosnia-Herzegovina",
+                "pts": 2,
+                "played": 2,
+                "won": 0,
+                "drawn": 2,
                 "lost": 0,
                 "goalDifference": 0
             },
@@ -63,15 +72,6 @@
             },
             {
                 "name": "Qatar",
-                "pts": 1,
-                "played": 1,
-                "won": 0,
-                "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
-                "name": "Bosnia-Herzegovina",
                 "pts": 1,
                 "played": 1,
                 "won": 0,
