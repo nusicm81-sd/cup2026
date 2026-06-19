@@ -86,19 +86,19 @@
         "teams": [
             {
                 "name": "Scotland",
-                "pts": 3,
-                "played": 1,
+                "pts": 4,
+                "played": 2,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 0,
                 "goalDifference": 1
             },
             {
                 "name": "Morocco",
-                "pts": 1,
-                "played": 1,
+                "pts": 2,
+                "played": 2,
                 "won": 0,
-                "drawn": 1,
+                "drawn": 2,
                 "lost": 0,
                 "goalDifference": 0
             },
@@ -127,21 +127,21 @@
         "teams": [
             {
                 "name": "United States",
-                "pts": 3,
-                "played": 1,
-                "won": 1,
+                "pts": 6,
+                "played": 2,
+                "won": 2,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 3
+                "goalDifference": 5
             },
             {
                 "name": "Australia",
                 "pts": 3,
-                "played": 1,
+                "played": 2,
                 "won": 1,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 2
+                "lost": 1,
+                "goalDifference": 0
             },
             {
                 "name": "Turkey",
