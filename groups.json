@@ -4,21 +4,21 @@
         "teams": [
             {
                 "name": "Mexico",
-                "pts": 3,
-                "played": 1,
-                "won": 1,
+                "pts": 6,
+                "played": 2,
+                "won": 2,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 2
+                "goalDifference": 3
             },
             {
                 "name": "South Korea",
                 "pts": 3,
-                "played": 1,
+                "played": 2,
                 "won": 1,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 1
+                "lost": 1,
+                "goalDifference": 0
             },
             {
                 "name": "Czechia",
@@ -44,40 +44,40 @@
         "group": "Group B",
         "teams": [
             {
-                "name": "Switzerland",
-                "pts": 2,
+                "name": "Canada",
+                "pts": 4,
                 "played": 2,
-                "won": 0,
-                "drawn": 2,
+                "won": 1,
+                "drawn": 1,
                 "lost": 0,
-                "goalDifference": 0
+                "goalDifference": 6
+            },
+            {
+                "name": "Switzerland",
+                "pts": 4,
+                "played": 2,
+                "won": 1,
+                "drawn": 1,
+                "lost": 0,
+                "goalDifference": 3
             },
             {
                 "name": "Bosnia-Herzegovina",
-                "pts": 2,
+                "pts": 1,
                 "played": 2,
                 "won": 0,
-                "drawn": 2,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
-                "name": "Canada",
-                "pts": 1,
-                "played": 1,
-                "won": 0,
                 "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
+                "lost": 1,
+                "goalDifference": -3
             },
             {
                 "name": "Qatar",
                 "pts": 1,
-                "played": 1,
+                "played": 2,
                 "won": 0,
                 "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
+                "lost": 1,
+                "goalDifference": -6
             }
         ]
     },
