@@ -168,19 +168,19 @@
         "teams": [
             {
                 "name": "Germany",
-                "pts": 3,
-                "played": 1,
+                "pts": 4,
+                "played": 2,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 0,
                 "goalDifference": 6
             },
             {
                 "name": "Ivory Coast",
-                "pts": 3,
-                "played": 1,
+                "pts": 4,
+                "played": 2,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 0,
                 "goalDifference": 1
             },
@@ -208,25 +208,25 @@
         "group": "Group F",
         "teams": [
             {
-                "name": "Sweden",
-                "pts": 3,
-                "played": 1,
+                "name": "Netherlands",
+                "pts": 4,
+                "played": 2,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 0,
                 "goalDifference": 4
             },
             {
-                "name": "Japan",
-                "pts": 1,
-                "played": 1,
-                "won": 0,
-                "drawn": 1,
-                "lost": 0,
+                "name": "Sweden",
+                "pts": 3,
+                "played": 2,
+                "won": 1,
+                "drawn": 0,
+                "lost": 1,
                 "goalDifference": 0
             },
             {
-                "name": "Netherlands",
+                "name": "Japan",
                 "pts": 1,
                 "played": 1,
                 "won": 0,
