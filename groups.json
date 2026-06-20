@@ -85,7 +85,16 @@
         "group": "Group C",
         "teams": [
             {
-                "name": "Scotland",
+                "name": "Brazil",
+                "pts": 4,
+                "played": 2,
+                "won": 1,
+                "drawn": 1,
+                "lost": 0,
+                "goalDifference": 3
+            },
+            {
+                "name": "Morocco",
                 "pts": 4,
                 "played": 2,
                 "won": 1,
@@ -94,31 +103,22 @@
                 "goalDifference": 1
             },
             {
-                "name": "Morocco",
-                "pts": 2,
+                "name": "Scotland",
+                "pts": 3,
                 "played": 2,
-                "won": 0,
-                "drawn": 2,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
-                "name": "Brazil",
-                "pts": 1,
-                "played": 1,
-                "won": 0,
-                "drawn": 1,
-                "lost": 0,
+                "won": 1,
+                "drawn": 0,
+                "lost": 1,
                 "goalDifference": 0
             },
             {
                 "name": "Haiti",
                 "pts": 0,
-                "played": 1,
+                "played": 2,
                 "won": 0,
                 "drawn": 0,
-                "lost": 1,
-                "goalDifference": -1
+                "lost": 2,
+                "goalDifference": -4
             }
         ]
     },
@@ -144,21 +144,21 @@
                 "goalDifference": 0
             },
             {
-                "name": "Turkey",
-                "pts": 0,
-                "played": 1,
-                "won": 0,
+                "name": "Paraguay",
+                "pts": 3,
+                "played": 2,
+                "won": 1,
                 "drawn": 0,
                 "lost": 1,
                 "goalDifference": -2
             },
             {
-                "name": "Paraguay",
+                "name": "Turkey",
                 "pts": 0,
-                "played": 1,
+                "played": 2,
                 "won": 0,
                 "drawn": 0,
-                "lost": 1,
+                "lost": 2,
                 "goalDifference": -3
             }
         ]
