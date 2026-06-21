@@ -249,25 +249,25 @@
         "group": "Group G",
         "teams": [
             {
-                "name": "New Zealand",
-                "pts": 1,
-                "played": 1,
-                "won": 0,
-                "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
                 "name": "Iran",
-                "pts": 1,
-                "played": 1,
+                "pts": 2,
+                "played": 2,
                 "won": 0,
-                "drawn": 1,
+                "drawn": 2,
                 "lost": 0,
                 "goalDifference": 0
             },
             {
                 "name": "Belgium",
+                "pts": 2,
+                "played": 2,
+                "won": 0,
+                "drawn": 2,
+                "lost": 0,
+                "goalDifference": 0
+            },
+            {
+                "name": "New Zealand",
                 "pts": 1,
                 "played": 1,
                 "won": 0,
@@ -290,22 +290,13 @@
         "group": "Group H",
         "teams": [
             {
-                "name": "Saudi Arabia",
-                "pts": 2,
-                "played": 2,
-                "won": 0,
-                "drawn": 2,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
                 "name": "Spain",
-                "pts": 2,
+                "pts": 4,
                 "played": 2,
-                "won": 0,
-                "drawn": 2,
+                "won": 1,
+                "drawn": 1,
                 "lost": 0,
-                "goalDifference": 0
+                "goalDifference": 4
             },
             {
                 "name": "Uruguay",
@@ -315,6 +306,15 @@
                 "drawn": 1,
                 "lost": 0,
                 "goalDifference": 0
+            },
+            {
+                "name": "Saudi Arabia",
+                "pts": 1,
+                "played": 2,
+                "won": 0,
+                "drawn": 1,
+                "lost": 1,
+                "goalDifference": -4
             },
             {
                 "name": "Cape Verde Islands",
