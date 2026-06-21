@@ -290,25 +290,25 @@
         "group": "Group H",
         "teams": [
             {
-                "name": "Uruguay",
-                "pts": 1,
-                "played": 1,
-                "won": 0,
-                "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
                 "name": "Saudi Arabia",
-                "pts": 1,
-                "played": 1,
+                "pts": 2,
+                "played": 2,
                 "won": 0,
-                "drawn": 1,
+                "drawn": 2,
                 "lost": 0,
                 "goalDifference": 0
             },
             {
                 "name": "Spain",
+                "pts": 2,
+                "played": 2,
+                "won": 0,
+                "drawn": 2,
+                "lost": 0,
+                "goalDifference": 0
+            },
+            {
+                "name": "Uruguay",
                 "pts": 1,
                 "played": 1,
                 "won": 0,
