@@ -331,6 +331,15 @@
         "group": "Group I",
         "teams": [
             {
+                "name": "France",
+                "pts": 6,
+                "played": 2,
+                "won": 2,
+                "drawn": 0,
+                "lost": 0,
+                "goalDifference": 3
+            },
+            {
                 "name": "Norway",
                 "pts": 3,
                 "played": 1,
@@ -338,15 +347,6 @@
                 "drawn": 0,
                 "lost": 0,
                 "goalDifference": 3
-            },
-            {
-                "name": "France",
-                "pts": 3,
-                "played": 1,
-                "won": 1,
-                "drawn": 0,
-                "lost": 0,
-                "goalDifference": 2
             },
             {
                 "name": "Senegal",
@@ -360,11 +360,11 @@
             {
                 "name": "Iraq",
                 "pts": 0,
-                "played": 1,
+                "played": 2,
                 "won": 0,
                 "drawn": 0,
-                "lost": 1,
-                "goalDifference": -3
+                "lost": 2,
+                "goalDifference": -4
             }
         ]
     },
@@ -373,21 +373,21 @@
         "teams": [
             {
                 "name": "Argentina",
-                "pts": 3,
-                "played": 1,
-                "won": 1,
+                "pts": 6,
+                "played": 2,
+                "won": 2,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 3
+                "goalDifference": 5
             },
             {
                 "name": "Austria",
                 "pts": 3,
-                "played": 1,
+                "played": 2,
                 "won": 1,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 2
+                "lost": 1,
+                "goalDifference": 0
             },
             {
                 "name": "Jordan",
