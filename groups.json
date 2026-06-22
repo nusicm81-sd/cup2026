@@ -249,6 +249,15 @@
         "group": "Group G",
         "teams": [
             {
+                "name": "Egypt",
+                "pts": 4,
+                "played": 2,
+                "won": 1,
+                "drawn": 1,
+                "lost": 0,
+                "goalDifference": 2
+            },
+            {
                 "name": "Iran",
                 "pts": 2,
                 "played": 2,
@@ -269,20 +278,11 @@
             {
                 "name": "New Zealand",
                 "pts": 1,
-                "played": 1,
+                "played": 2,
                 "won": 0,
                 "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
-                "name": "Egypt",
-                "pts": 1,
-                "played": 1,
-                "won": 0,
-                "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
+                "lost": 1,
+                "goalDifference": -2
             }
         ]
     },
@@ -300,10 +300,19 @@
             },
             {
                 "name": "Uruguay",
-                "pts": 1,
-                "played": 1,
+                "pts": 2,
+                "played": 2,
                 "won": 0,
-                "drawn": 1,
+                "drawn": 2,
+                "lost": 0,
+                "goalDifference": 0
+            },
+            {
+                "name": "Cape Verde Islands",
+                "pts": 2,
+                "played": 2,
+                "won": 0,
+                "drawn": 2,
                 "lost": 0,
                 "goalDifference": 0
             },
@@ -315,15 +324,6 @@
                 "drawn": 1,
                 "lost": 1,
                 "goalDifference": -4
-            },
-            {
-                "name": "Cape Verde Islands",
-                "pts": 1,
-                "played": 1,
-                "won": 0,
-                "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
             }
         ]
     },
