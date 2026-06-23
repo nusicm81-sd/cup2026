@@ -419,7 +419,7 @@
                 "won": 1,
                 "drawn": 1,
                 "lost": 0,
-                "goalDifference": 1
+                "goalDifference": 5
             },
             {
                 "name": "Colombia",
@@ -446,7 +446,7 @@
                 "won": 0,
                 "drawn": 0,
                 "lost": 2,
-                "goalDifference": -3
+                "goalDifference": -7
             }
         ]
     },
@@ -455,19 +455,19 @@
         "teams": [
             {
                 "name": "England",
-                "pts": 3,
-                "played": 1,
+                "pts": 4,
+                "played": 2,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 0,
                 "goalDifference": 2
             },
             {
                 "name": "Ghana",
-                "pts": 3,
-                "played": 1,
+                "pts": 4,
+                "played": 2,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 0,
                 "goalDifference": 1
             },
