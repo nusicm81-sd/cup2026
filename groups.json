@@ -413,6 +413,15 @@
         "group": "Group K",
         "teams": [
             {
+                "name": "Portugal",
+                "pts": 4,
+                "played": 2,
+                "won": 1,
+                "drawn": 1,
+                "lost": 0,
+                "goalDifference": 1
+            },
+            {
                 "name": "Colombia",
                 "pts": 3,
                 "played": 1,
@@ -431,22 +440,13 @@
                 "goalDifference": 0
             },
             {
-                "name": "Portugal",
-                "pts": 1,
-                "played": 1,
-                "won": 0,
-                "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
-            },
-            {
                 "name": "Uzbekistan",
                 "pts": 0,
-                "played": 1,
+                "played": 2,
                 "won": 0,
                 "drawn": 0,
-                "lost": 1,
-                "goalDifference": -2
+                "lost": 2,
+                "goalDifference": -3
             }
         ]
     },
