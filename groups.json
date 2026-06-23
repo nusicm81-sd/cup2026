@@ -337,25 +337,25 @@
                 "won": 2,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 3
+                "goalDifference": 5
             },
             {
                 "name": "Norway",
-                "pts": 3,
-                "played": 1,
-                "won": 1,
+                "pts": 6,
+                "played": 2,
+                "won": 2,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 3
+                "goalDifference": 4
             },
             {
                 "name": "Senegal",
                 "pts": 0,
-                "played": 1,
+                "played": 2,
                 "won": 0,
                 "drawn": 0,
-                "lost": 1,
-                "goalDifference": -2
+                "lost": 2,
+                "goalDifference": -3
             },
             {
                 "name": "Iraq",
@@ -364,7 +364,7 @@
                 "won": 0,
                 "drawn": 0,
                 "lost": 2,
-                "goalDifference": -4
+                "goalDifference": -6
             }
         ]
     },
@@ -390,21 +390,21 @@
                 "goalDifference": 0
             },
             {
-                "name": "Jordan",
-                "pts": 0,
-                "played": 1,
-                "won": 0,
+                "name": "Algeria",
+                "pts": 3,
+                "played": 2,
+                "won": 1,
                 "drawn": 0,
                 "lost": 1,
                 "goalDifference": -2
             },
             {
-                "name": "Algeria",
+                "name": "Jordan",
                 "pts": 0,
-                "played": 1,
+                "played": 2,
                 "won": 0,
                 "drawn": 0,
-                "lost": 1,
+                "lost": 2,
                 "goalDifference": -3
             }
         ]
