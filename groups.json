@@ -44,40 +44,40 @@
         "group": "Group B",
         "teams": [
             {
-                "name": "Canada",
-                "pts": 4,
-                "played": 2,
-                "won": 1,
+                "name": "Switzerland",
+                "pts": 7,
+                "played": 3,
+                "won": 2,
                 "drawn": 1,
                 "lost": 0,
-                "goalDifference": 6
+                "goalDifference": 4
             },
             {
-                "name": "Switzerland",
+                "name": "Canada",
                 "pts": 4,
-                "played": 2,
+                "played": 3,
                 "won": 1,
                 "drawn": 1,
-                "lost": 0,
-                "goalDifference": 3
+                "lost": 1,
+                "goalDifference": 5
             },
             {
                 "name": "Bosnia-Herzegovina",
-                "pts": 1,
-                "played": 2,
-                "won": 0,
+                "pts": 4,
+                "played": 3,
+                "won": 1,
                 "drawn": 1,
                 "lost": 1,
-                "goalDifference": -3
+                "goalDifference": -1
             },
             {
                 "name": "Qatar",
                 "pts": 1,
-                "played": 2,
+                "played": 3,
                 "won": 0,
                 "drawn": 1,
-                "lost": 1,
-                "goalDifference": -6
+                "lost": 2,
+                "goalDifference": -8
             }
         ]
     },
@@ -86,37 +86,37 @@
         "teams": [
             {
                 "name": "Brazil",
-                "pts": 4,
-                "played": 2,
+                "pts": 5,
+                "played": 3,
                 "won": 1,
-                "drawn": 1,
+                "drawn": 2,
                 "lost": 0,
                 "goalDifference": 3
             },
             {
                 "name": "Morocco",
-                "pts": 4,
-                "played": 2,
+                "pts": 5,
+                "played": 3,
                 "won": 1,
-                "drawn": 1,
+                "drawn": 2,
                 "lost": 0,
                 "goalDifference": 1
             },
             {
                 "name": "Scotland",
-                "pts": 3,
-                "played": 2,
+                "pts": 4,
+                "played": 3,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 1,
                 "goalDifference": 0
             },
             {
                 "name": "Haiti",
-                "pts": 0,
-                "played": 2,
+                "pts": 1,
+                "played": 3,
                 "won": 0,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 2,
                 "goalDifference": -4
             }
