@@ -413,6 +413,15 @@
         "group": "Group K",
         "teams": [
             {
+                "name": "Colombia",
+                "pts": 6,
+                "played": 2,
+                "won": 2,
+                "drawn": 0,
+                "lost": 0,
+                "goalDifference": 3
+            },
+            {
                 "name": "Portugal",
                 "pts": 4,
                 "played": 2,
@@ -422,22 +431,13 @@
                 "goalDifference": 5
             },
             {
-                "name": "Colombia",
-                "pts": 3,
-                "played": 1,
-                "won": 1,
-                "drawn": 0,
-                "lost": 0,
-                "goalDifference": 2
-            },
-            {
                 "name": "Congo DR",
                 "pts": 1,
-                "played": 1,
+                "played": 2,
                 "won": 0,
                 "drawn": 1,
-                "lost": 0,
-                "goalDifference": 0
+                "lost": 1,
+                "goalDifference": -1
             },
             {
                 "name": "Uzbekistan",
@@ -472,21 +472,21 @@
                 "goalDifference": 1
             },
             {
-                "name": "Panama",
-                "pts": 0,
-                "played": 1,
-                "won": 0,
+                "name": "Croatia",
+                "pts": 3,
+                "played": 2,
+                "won": 1,
                 "drawn": 0,
                 "lost": 1,
                 "goalDifference": -1
             },
             {
-                "name": "Croatia",
+                "name": "Panama",
                 "pts": 0,
-                "played": 1,
+                "played": 2,
                 "won": 0,
                 "drawn": 0,
-                "lost": 1,
+                "lost": 2,
                 "goalDifference": -2
             }
         ]
