@@ -169,38 +169,38 @@
             {
                 "name": "Germany",
                 "pts": 6,
-                "played": 2,
+                "played": 3,
                 "won": 2,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 7
+                "lost": 1,
+                "goalDifference": 6
             },
             {
                 "name": "Ivory Coast",
-                "pts": 3,
-                "played": 2,
-                "won": 1,
+                "pts": 6,
+                "played": 3,
+                "won": 2,
                 "drawn": 0,
+                "lost": 1,
+                "goalDifference": 2
+            },
+            {
+                "name": "Ecuador",
+                "pts": 4,
+                "played": 3,
+                "won": 1,
+                "drawn": 1,
                 "lost": 1,
                 "goalDifference": 0
             },
             {
-                "name": "Ecuador",
-                "pts": 1,
-                "played": 2,
-                "won": 0,
-                "drawn": 1,
-                "lost": 1,
-                "goalDifference": -1
-            },
-            {
                 "name": "Curaçao",
                 "pts": 1,
-                "played": 2,
+                "played": 3,
                 "won": 0,
                 "drawn": 1,
-                "lost": 1,
-                "goalDifference": -6
+                "lost": 2,
+                "goalDifference": -8
             }
         ]
     },
