@@ -332,39 +332,39 @@
         "teams": [
             {
                 "name": "France",
-                "pts": 6,
-                "played": 2,
-                "won": 2,
+                "pts": 9,
+                "played": 3,
+                "won": 3,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 5
+                "goalDifference": 8
             },
             {
                 "name": "Norway",
                 "pts": 6,
-                "played": 2,
+                "played": 3,
                 "won": 2,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 4
+                "lost": 1,
+                "goalDifference": 1
             },
             {
                 "name": "Senegal",
-                "pts": 0,
-                "played": 2,
-                "won": 0,
+                "pts": 3,
+                "played": 3,
+                "won": 1,
                 "drawn": 0,
                 "lost": 2,
-                "goalDifference": -3
+                "goalDifference": 2
             },
             {
                 "name": "Iraq",
                 "pts": 0,
-                "played": 2,
+                "played": 3,
                 "won": 0,
                 "drawn": 0,
-                "lost": 2,
-                "goalDifference": -6
+                "lost": 3,
+                "goalDifference": -11
             }
         ]
     },
