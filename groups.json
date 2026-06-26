@@ -128,38 +128,38 @@
             {
                 "name": "United States",
                 "pts": 6,
-                "played": 2,
+                "played": 3,
                 "won": 2,
                 "drawn": 0,
-                "lost": 0,
-                "goalDifference": 5
+                "lost": 1,
+                "goalDifference": 4
             },
             {
                 "name": "Australia",
-                "pts": 3,
-                "played": 2,
+                "pts": 4,
+                "played": 3,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 1,
                 "goalDifference": 0
             },
             {
                 "name": "Paraguay",
-                "pts": 3,
-                "played": 2,
+                "pts": 4,
+                "played": 3,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 1,
                 "goalDifference": -2
             },
             {
                 "name": "Turkey",
-                "pts": 0,
-                "played": 2,
-                "won": 0,
+                "pts": 3,
+                "played": 3,
+                "won": 1,
                 "drawn": 0,
                 "lost": 2,
-                "goalDifference": -3
+                "goalDifference": -2
             }
         ]
     },
@@ -209,39 +209,39 @@
         "teams": [
             {
                 "name": "Netherlands",
-                "pts": 4,
-                "played": 2,
-                "won": 1,
+                "pts": 7,
+                "played": 3,
+                "won": 2,
                 "drawn": 1,
                 "lost": 0,
-                "goalDifference": 4
+                "goalDifference": 6
             },
             {
                 "name": "Japan",
-                "pts": 4,
-                "played": 2,
+                "pts": 5,
+                "played": 3,
                 "won": 1,
-                "drawn": 1,
+                "drawn": 2,
                 "lost": 0,
                 "goalDifference": 4
             },
             {
                 "name": "Sweden",
-                "pts": 3,
-                "played": 2,
+                "pts": 4,
+                "played": 3,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 1,
                 "goalDifference": 0
             },
             {
                 "name": "Tunisia",
                 "pts": 0,
-                "played": 2,
+                "played": 3,
                 "won": 0,
                 "drawn": 0,
-                "lost": 2,
-                "goalDifference": -8
+                "lost": 3,
+                "goalDifference": -10
             }
         ]
     },
