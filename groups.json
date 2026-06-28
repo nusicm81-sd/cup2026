@@ -373,39 +373,39 @@
         "teams": [
             {
                 "name": "Argentina",
-                "pts": 6,
-                "played": 2,
-                "won": 2,
+                "pts": 9,
+                "played": 3,
+                "won": 3,
                 "drawn": 0,
                 "lost": 0,
-                "goalDifference": 5
+                "goalDifference": 7
             },
             {
                 "name": "Austria",
-                "pts": 3,
-                "played": 2,
+                "pts": 4,
+                "played": 3,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 1,
                 "goalDifference": 0
             },
             {
                 "name": "Algeria",
-                "pts": 3,
-                "played": 2,
+                "pts": 4,
+                "played": 3,
                 "won": 1,
-                "drawn": 0,
+                "drawn": 1,
                 "lost": 1,
                 "goalDifference": -2
             },
             {
                 "name": "Jordan",
                 "pts": 0,
-                "played": 2,
+                "played": 3,
                 "won": 0,
                 "drawn": 0,
-                "lost": 2,
-                "goalDifference": -3
+                "lost": 3,
+                "goalDifference": -5
             }
         ]
     },
@@ -431,22 +431,22 @@
                 "goalDifference": 5
             },
             {
-                "name": "Uzbekistan",
-                "pts": 3,
+                "name": "Congo DR",
+                "pts": 4,
                 "played": 3,
                 "won": 1,
-                "drawn": 0,
-                "lost": 2,
-                "goalDifference": -6
+                "drawn": 1,
+                "lost": 1,
+                "goalDifference": 1
             },
             {
-                "name": "Congo DR",
-                "pts": 1,
+                "name": "Uzbekistan",
+                "pts": 0,
                 "played": 3,
                 "won": 0,
-                "drawn": 1,
-                "lost": 2,
-                "goalDifference": -2
+                "drawn": 0,
+                "lost": 3,
+                "goalDifference": -9
             }
         ]
     },
